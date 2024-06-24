@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".model.GameOverActivity"
+    android:background="@drawable/mario_gameover_img">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/game_over_TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        tools:text="you played 20 sec"
+        android:textColor="@color/black"
+        android:textSize="@dimen/game_over_text_default"
+        android:textStyle="bold"
+        app:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gameOver_BTN_PlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textSize="25sp"
+        android:backgroundTint="@color/red_500D"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="Play again"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".model.MainActivity"
+    tools:ignore="ExtraText"
+    android:background="@drawable/game_background">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/BOTTOMS_COMPAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/bottom_default_margin"
+        android:layout_marginBottom="@dimen/bottom_default_margin">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_left"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/left"
+            app:iconSize="@dimen/BTN_icon_default"
+            app:iconTintMode="multiply"
+            android:gravity="left|center"
+            tools:text="l"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="15" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_right"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/right"
+            app:iconSize="@dimen/BTN_icon_default"
+            app:iconTintMode="multiply"
+            android:gravity="center"
+            tools:text="r"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/heart_width"
+        android:layout_height="@dimen/heart_height"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_alignParentRight="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mushroom_MAT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/BOTTOMS_COMPAT"
+        android:layout_marginTop="@dimen/default_MAT_margin"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_row0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_row1"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_left_mushroomI0J0"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_center_mushroomI0J1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_right_mushroomI0J2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_row2"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_left_mushroomI1J0"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_center_mushroomI1J1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_right_mushroomI1J2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_row3"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_left_mushroomI2J0"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_center_mushroomI2J1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_right_mushroomI2J2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/BOTTOMS_COMPAT"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_left_mushroomI3J0"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_center_mushroomI3J1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_right_mushroomI3J2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/mushroom_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mushroom" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BOTTOMS_COMPAT"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_left_mario"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/mario_height"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mario" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_center_mario"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/mario_height"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mario" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_right_mario"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/mario_height"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mario" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
