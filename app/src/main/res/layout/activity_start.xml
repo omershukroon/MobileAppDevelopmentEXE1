@@ -5,29 +5,189 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".model.StartActivity"
-    android:background="@color/amber_500D">
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/gameOver_BTN_StartPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"
-        android:textSize="25sp"
-        android:backgroundTint="@color/red_500D"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        android:text="@string/start_game"
-        android:textColor="@color/white"/>
+    android:background="@color/teal_A200"
+    tools:context=".model.StartActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/start_ING_SuperMario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/super_mario"
-        />
+        app:srcCompat="@drawable/super_mario" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/start_BOTTOMS_COMPAT_onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_PLAYBOTTOMS_COMPAT"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="120dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_mario_onClick"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="invisible"
+            app:icon="@drawable/mario"
+            app:iconSize="85dp"
+            app:iconTint="@color/black"
+            tools:text="l" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_luigis_onClick"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="invisible"
+            app:icon="@drawable/luigi"
+            app:iconSize="85dp"
+            app:iconTint="@color/black"
+            tools:text="l" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/start_BOTTOMS_COMPAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_PLAYBOTTOMS_COMPAT"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="55dp"
+        android:layout_marginBottom="120dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_mario"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:icon="@drawable/mario"
+            app:iconSize="@dimen/BTN_icon_default"
+            app:iconTintMode="multiply"
+            tools:text="l" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_luigis"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:icon="@drawable/luigi"
+            app:iconSize="@dimen/BTN_icon_default"
+            app:iconTintMode="multiply"
+            tools:text="l" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/start_PLAYBOTTOMS_COMPAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="60dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_StartGame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="@color/orange_web"
+            android:text="@string/start_game"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_RecordsTable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="@color/orange_web"
+            android:text="records table"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <FrameLayout
+        android:id="@+id/name_feame"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@color/red_web">
+
+        <EditText
+            android:id="@+id/start_name"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:autofillHints="name"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:textColor="@color/black" />
+    </FrameLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/name_feame"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp">
+        <RadioButton
+            android:id="@+id/radioButtonArrowa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_feame"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="arroes" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_feame"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="sensors" />
+    </RadioGroup>
 
 </RelativeLayout>

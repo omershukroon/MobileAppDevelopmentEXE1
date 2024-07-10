@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name" >Mario Game</string>
+    <string name="app_name">Mario Game</string>
     <string name="start_game">start game</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="play_with_sensors">Play with sensors</string>
+    <string name="play_with_arrows">Play with arrows</string>
+    <string name="start_again">Start again</string>
+    <string name="exit_game">Exit game</string>
 </resources>

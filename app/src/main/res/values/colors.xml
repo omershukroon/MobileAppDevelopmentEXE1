@@ -5,7 +5,19 @@
     <color name="red_400">#EF5350</color>
     <color name="red_500">#F44336</color>
     <color name="red_500D">#BA000D</color>
+    <color name="red_web">#EB6383</color>
     <color name="amber_500D">#FFC107</color>
+    <color name="amber_100">#FFE082</color>
+    <color name="amber_A200">#FFD740</color>
+    <color name="red_100">#EF9A9A</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="teal_A200">#69F0AE</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blueG_200">#B0BEC5</color>
+    <color name="deep_orange_A100">#FF9E80</color>
+    <color name="orange_web">#FA9191</color>
+    <color name="icon_blue">#2979FF</color>
+    <color name="icon_green">#76FF03</color>
 
 
 
